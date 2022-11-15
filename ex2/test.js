@@ -1,6 +1,6 @@
 const factorial = require("./factorial");
 const gcd = require("./gcd");
-const hcm = require("./hcm");
+const lcm = require("./lcm");
 const toHex = require("./toHex");
 
 if (factorial(5) === 120) {
@@ -15,10 +15,10 @@ if (gcd(6, 21) === 3) {
   console.log(`❌ [gcd] Test failed`);
 }
 
-if (hcm(6, 21) === 3) {
-  console.log("✅ [hcm] Test passed!");
+if (lcm(6, 12) === 12) {
+  console.log("✅ [lcm] Test passed!");
 } else {
-  console.log(`❌ [hcm] Test failed`);
+  console.log(`❌ [lcm] Test failed`);
 }
 
 if (toHex(Math.floor(Math.random() * 1000))) {
